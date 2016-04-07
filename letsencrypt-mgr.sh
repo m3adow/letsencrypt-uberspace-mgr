@@ -9,7 +9,7 @@ DOMAINS_FILE=${DOMAINS_FILE:-${HOME}/etc/letsencrypt_domains.conf}
 DOMAIN_PLACEHOLDER=${DOMAIN_PLACEHOLDER:-%DOMAINS%}
 
 LE_CONF=${LE_CONF:-"${LE_CONFIG_DIR}/cli.ini"}
-LE_PATH=$(which letsencrypt)
+LE_PATH=${LE_PATH:-"/usr/local/bin/letsencrypt"}
 
 while read -u 42 DOMAIN_LINE
 do
