@@ -4,11 +4,11 @@ set -u
 set -o pipefail
 set -x
 
-LE_CONFIG_DIR=${LE_CONFIG_DIR:-${HOME}/.config/letsencrypt/}
+LE_CONFIG_DIR=${LE_CONFIG_DIR:-"${HOME}/.config/letsencrypt/"}
 LE_CONF=${LE_CONF:-"${LE_CONFIG_DIR}/cli.ini"}
 LE_ARGS=${LE_ARGS:-"--agree-tos --non-interactive"}
 
-DOMAINS_FILE=${DOMAINS_FILE:-${HOME}/etc/letsencrypt_domains.conf}
+DOMAINS_FILE=${DOMAINS_FILE:-"${HOME}/etc/letsencrypt_domains.conf"}
 
 # Include Path to Uberspace scripts
 PATH="${PATH}:/usr/local/bin/"
