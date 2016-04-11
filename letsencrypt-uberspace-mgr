@@ -21,7 +21,7 @@ do
 	# Save original cli.ini
 	sed -i".sic" "/^domains =/ c\
 		domains = ${DOMAIN_LINE}" "${LE_CONF}"
-	letsencrypt certonly
+	letsencrypt ${LE_ARGS} certonly
 	# Restore original cli.ini
 	mv "${LE_CONF}.sic" "${LE_CONF}"
 	LIVE_DIR="${LE_CONFIG_DIR}/live/${DOMAIN_LINE%%,*}/"
