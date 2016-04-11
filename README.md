@@ -29,6 +29,7 @@ It's possible to override every variable defined in the script to change its fun
 
 * Add different E-Mail adresses per domain set
 * Ease creation of new certificates
+* Use URL instead of conf file to ease cert management of distributed Uberspaces
 
 ### Disclaimer
 
